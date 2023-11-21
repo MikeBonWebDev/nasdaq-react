@@ -9,7 +9,7 @@ class Cerca extends Component {
     }
     this.place = `Cerca Stock...`
   }
-
+  
   aggiornoCerca = e => {
     this.setState({camporicerca: e.target.value})
   }
@@ -24,6 +24,7 @@ class Cerca extends Component {
     e.target.blur();
   }
 
+  //This component include a form with search field, and submit button
   render() {
     const defPlace = this.place;
     return (

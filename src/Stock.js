@@ -68,7 +68,7 @@ class Stock extends Component {
       );
     return hoursArray;
   } 
-
+  //Start method for Update Stock values
   getNewPrice = async (str) => {
     const accessKeyAlphaV = process.env.AV_API_KEY;
     const apiUrl = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${str}&interval=1min&outputsize=compact&apikey=${accessKeyAlphaV}&datatype=json`;
@@ -125,6 +125,7 @@ class Stock extends Component {
     }
   }  
 
+
   aggiornoStock = (val) => {
     this.getNewPrice(val);
   }
@@ -133,6 +134,7 @@ class Stock extends Component {
     this.props.eliminoStock(this.props.datistock.id)
   }
 
+  //Methods for switch button and update stock in Real Time (1min interval)
   startRealTime = () => {
     this.timer = setInterval(() => {
       this.getNewPrice(this.state.nome);
@@ -154,6 +156,7 @@ class Stock extends Component {
     this.setState({checkRt: ckrt})
   }
 
+  //Method used to hide/show Graph Element
   showGrafico = () => {
     this.setState({showGrafico: !this.state.showGrafico})
   }
@@ -164,17 +167,16 @@ class Stock extends Component {
   }
 
   componentDidUpdate(pp,ps) {
-   console.log('4f) FIGLIO – DidUpdate ' + this.state.nome);
-   // if (pp.datistock.quotazione !== this.props.datistock.quotazione){
-   //   this.setState((state,props) => 
-   //                 ({ quotazione: props.datistock.quotazione }));
-   // }
+   console.log('4f) FIGLIO – DidUpdate ');
   }
 
   componentWillUnmount = () => {
+    console.log(`5f) FIGLIO - removed`);
     this.stopRealTime();
   }
- 
+  
+  /*When user click on NomeStock.js component, it add Stock.js component,
+  that contains Stock details, Update button, Show Graphic, and switch for auto Update mode (1min)*/
   render() {    
     console.log('2f) FIGLIO Render ' + this.state.nome);
     const hours = this.state.hours[0];
@@ -211,7 +213,7 @@ class Stock extends Component {
                 <i className="iconupInf fas fa-sync-alt fa-1x mb-3"></i>}
               
               {!this.state.onLoad &&
-                <i className="iconup fas fa-sync-alt fa-1x mb-3"></i>}
+                <i title="Update" className="iconup fas fa-sync-alt fa-1x mb-3"></i>}
             </h2>
             <p onClick={this.showGrafico}>
               <i className='btnGraph fas fa-chart-line fa-2x'></i>

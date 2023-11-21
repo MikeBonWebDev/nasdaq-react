@@ -7,8 +7,8 @@ import Stock from './Stock';
 class App extends Component {
 
   constructor(props) {
-
     super(props);
+
     this.state = {
       listaelementi: [],
       listapreferiti: [],
@@ -22,30 +22,22 @@ class App extends Component {
       noResult: false,
       cont: 0,     
     };
+
     console.log('1g) Creo istanza GENITORE');
   }
 
-  cercaElementi =  (strcerca) => {
-    //alert(`Stai cercando ${strcerca}`);    
+  //Start search and save elements from search input to API Call
+  //On Click Submit button in Cerca.js
+  cercaElementi =  (strcerca) => {   
     this.getElementi(strcerca);
   }
 
-  getElementi = async (str) => {
+  /*Call API, manipulate data and save in this.state. Generation NomeStock.js component
+  About error: see example file '.json' in public folder like 'fetchStock.json',
+  for catch behavior*/
+  getElementi = async (str) => {            
 
-      /*Con Alpha Vantage, se viene inserita una stringa vuota o scorretta, appare questo:
-      
-      {
-        "Error Message": "Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for TIME_SERIES_DAILY."
-      }
-
-      Mentre se il limite richieste viene raggiunto, viene stampato questo:
-
-      {
-        "Information": "Thank you for using Alpha Vantage! Our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
-      }
-
-      Impostare la gestione di queste casistiche*/      
-
+      //Using a .env file for more security of my API Key
       const accessKeyAlphaV = process.env.AV_API_KEY;
       const apiUrl = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${str}&interval=1min&outputsize=compact&apikey=${accessKeyAlphaV}&datatype=json`;
       try {
@@ -53,8 +45,9 @@ class App extends Component {
         const response = await fetch(apiUrl);
         const r = await response.json();
 
+        //Start setting error behavior
         if (Object.keys(r).length === 0) {
-          throw new Error(`Errore generico,
+          throw new Error(`Errore generico -
           verificare la correttezza delle informazioni inserite`)
         }
 
@@ -97,6 +90,7 @@ class App extends Component {
       };
   }
 
+  //How Stock.js being create
   onAddPreferiti = (ids) => {
     try {
       console.log(this.state.cont);
@@ -131,6 +125,7 @@ class App extends Component {
     }
   }
 
+  //How Stock.js being delete
   elimino = (id) => {
     if(id) {
       const preferiti = this.state.listapreferiti.filter((el) => {
