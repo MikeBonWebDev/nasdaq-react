@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eba1c17d.css",
+    "main.js": "/static/js/main.83210e0d.js",
+    "static/media/bgnasdaq.png": "/static/media/bgnasdaq.0111d5c134cf56d58dc4.png",
+    "index.html": "/index.html",
+    "main.eba1c17d.css.map": "/static/css/main.eba1c17d.css.map",
+    "main.83210e0d.js.map": "/static/js/main.83210e0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eba1c17d.css",
+    "static/js/main.83210e0d.js"
+  ]
+}
