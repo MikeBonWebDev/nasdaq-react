@@ -8,6 +8,17 @@ This is a Web App builded using **React.js**, for monitoring and view stock valu
 
 [View preview on GitHub Pages](https://mikebonwebdev.github.io/nasdaq-react-ghpages)
 
+```
+
+## Summary:
+
+- [Core Function](README.md#core-functions)
+- [Usage](README.MD#usage)
+- [Technologies Employed](README.md#technologies-employed)
+- [Contributions](README.md#contributions)
+
+```````
+
 ## Core functions
 
 - **Searching Stock**: Application allowed users search stock values typing inside a text input and, for this moment, the input is restricted **only to company _acronyms_**: Input be used to query a API obtaining stock's required data.
