@@ -8,16 +8,12 @@ This is a Web App builded using **React.js**, for monitoring and view stock valu
 
 [View preview on GitHub Pages](https://mikebonwebdev.github.io/nasdaq-react-ghpages)
 
-```
-
 ## Summary:
 
 - [Core Function](README.md#core-functions)
 - [Usage](README.MD#usage)
 - [Technologies Employed](README.md#technologies-employed)
 - [Contributions](README.md#contributions)
-
-```
 
 ## Core functions
 
