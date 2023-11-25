@@ -1,4 +1,4 @@
-> _INFO_
+> [!NOTE]
 > [See preview on GitHub Pages](https://mikebonwebdev.github.io/nasdaq-react-ghpages)
 
 [Visualizza in italiano](./LEGGIMI.md)

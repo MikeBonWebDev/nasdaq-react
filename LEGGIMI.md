@@ -1,4 +1,4 @@
-> _INFO_
+> [!NOTE]
 > [Visualizza l'anteprima su GitHub Pages](https://mikebonwebdev.github.io/nasdaq-react-ghpages)
 
 [View in english](./README.md)
