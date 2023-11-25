@@ -1,10 +1,17 @@
-> [!INFO]
+> _INFO_
 > [Visualizza l'anteprima su GitHub Pages](https://mikebonwebdev.github.io/nasdaq-react-ghpages)
 
 [View in english](./README.md)
 # Stock Market Dashboard
 
 Questo progetto è un'applicazione web costruita utilizzando **React.js** per monitorare e visualizzare valori azionari attraverso un'interfaccia intuitiva e interattiva.
+
+## Indice
+
+- [Funzionalità Principali](LEGGIMI.md#funzionalità-principali)
+- [Utilizzo](LEGGIMI.md#utilizzo)
+- [Tecnologie impiegate](LEGGIMI.md#tecnologie-utilizzate)
+- [Contributi](LEGGIMI.md#contributi)
 
 ## Funzionalità Principali
 
