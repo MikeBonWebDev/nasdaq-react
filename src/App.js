@@ -172,7 +172,7 @@ class App extends Component {
             <section className='listapreferiti'>
               <div className='row'>
               {this.state.listapreferiti.map((el, index) => 
-                <div className='col-md-6'>
+                <div className='col-sm-6'>
                     {this.state.inCaricamentoStock && 
                       <p className='loadico text-center fas fa-sync-alt fa-3x mt-3'></p>}
 

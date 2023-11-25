@@ -188,7 +188,7 @@ class Stock extends Component {
 
     const percentageChange = ((closePrice - openPrice) / openPrice) * 100;
     return (
-      <div className="stock col">
+      <div className="stock col-sm">
         <div className="bodystock m-1 p-3">          
         <i 
           className='fas fa-times-circle closebtn mt-1'
@@ -231,7 +231,7 @@ class Stock extends Component {
           </div>
           <div className='bodygrafico'>
             <div className='row'>
-              <div className='col'>
+              <div className='col-sm'>
                 { this.state.showGrafico && <Grafico datistock={this.state.datigrafico} />}
               </div>
             </div>
