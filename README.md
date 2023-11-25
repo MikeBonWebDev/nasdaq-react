@@ -17,7 +17,7 @@ This is a Web App builded using **React.js**, for monitoring and view stock valu
 - [Technologies Employed](README.md#technologies-employed)
 - [Contributions](README.md#contributions)
 
-```````
+```
 
 ## Core functions
 
