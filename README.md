@@ -42,8 +42,9 @@ Running app, you can:
 - ***React.js***: Main framework/library for app deploying.
 - ***Alpha Vantage***, Stock Market API: Queried to obtain stock data.
 - **Additional Libraries**: 
-  - ***Bootstrap*** = Responsive e presetted items.
+  - ***Bootstrap***: Responsive e presetted items.
   - ***Recharts***: graph items.
+  - ***Fontawsome***: icon items.
 
 ## [Contributions](README.md#contributionscontributions)
 Contributions to improve the application are welcome. Feel free to open an issue for suggestions or bug reports, or submit a pull request to contribute code directly.

@@ -44,8 +44,9 @@ Una volta avviata l'applicazione, puoi:
 - ***React.js***: Utilizzato come framework principale per lo sviluppo dell'applicazione.
 - ***Alpha Vantage***, API di Mercato Azionario: Interrogata per ottenere i dati relativi agli stock.
 - **Librerie Aggiuntive**: 
-  - ***Bootstrap*** = Responsive e strumenti preconfigurati
-  - ***Recharts***: Per il grafico
+  - ***Bootstrap***: Responsive e strumenti preconfigurati
+  - ***Recharts***: Per il grafico.
+  - ***Fontawsome***: Per le icone.
 
 ## [Contributi](LEGGIMI.md#contributi)
 Sono benvenuti i contributi per migliorare l'applicazione. Sentiti libero di aprire una issue per suggerimenti o segnalazioni di bug, o invia una pull request per contribuire direttamente al codice.
