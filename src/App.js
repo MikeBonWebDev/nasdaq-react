@@ -116,7 +116,6 @@ class App extends Component {
           cont: contatore,
           inCaricamentoStock: false,
         })
-        console.log(`ID: ${JSON.stringify(newStock)}`);
 
       } else {
         throw new Error(`Elemento già aggiunto ai preferiti`);        
