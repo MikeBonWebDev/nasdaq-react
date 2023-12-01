@@ -7,7 +7,7 @@
         "5. Output Size": "Compact",
         "6. Time Zone": "US/Eastern"
     },
-    "Time Series (5min)": {
+    "Time Series (1min)": {
         "2023-11-15 19:55:00": {
             "1. open": "152.3600",
             "2. high": "152.3600",
