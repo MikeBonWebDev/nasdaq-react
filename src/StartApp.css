@@ -1,0 +1,21 @@
+.start-app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;  
+}
+
+.start-app h1 {
+  font-size: 500%;
+  text-shadow: 2px 2px 2.5px black;  
+}
+
+.start-btn {
+  margin-top: 4%;
+  width: 20%;
+  font-size: large;
+  font-weight: bold;
+}
+
